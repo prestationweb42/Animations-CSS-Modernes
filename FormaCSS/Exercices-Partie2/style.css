@@ -1,0 +1,71 @@
+.container {
+    background-color: rgb(237, 246, 247);
+}
+.form p {
+    font-size: 40px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+.form__group {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto 0 auto;
+}
+.form__group label {
+    font-size: 1.5rem;
+}
+.form__group input {
+    border: 2px solid #fff;
+    border-radius: 100rem;
+    color: #6300a0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    outline: none;
+    padding: 0.5rem 1.5rem;
+    width: 100%;
+    transition: background-color 500ms;
+}
+.form__group input:focus {
+    border: 2px solid #6300a0;
+}
+.form__group input:not(:focus):invalid {
+    background-color: #b20a37;
+    border: 2px solid #b20a37;
+    color: white;
+}
+/* CSS CIRCLE GROW CLIC */
+.btn {
+    width: 20%;
+    background-color: #272727;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    margin: 2rem auto 2rem auto;
+    padding: 1rem 2rem;
+    border-radius: 9999px;
+}
+.btn-a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    padding: 2rem 1rem;
+    background: #f59f26;
+    text-transform: uppercase;
+}
+
+.btn:active + .ball {
+    transform: scale(1);
+    transition: transform ease-in 2000ms;
+}
+.ball {
+    width: 100px;
+    height: 100px;
+    background: #7efb78;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    transform: scale(0.1);
+    transition: transform ease-in 300ms;
+}

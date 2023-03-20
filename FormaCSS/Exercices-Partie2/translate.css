@@ -1,0 +1,31 @@
+/* CSS CIRCLE TRANSLATE */
+.btn3 {
+    width: 20%;
+    background-color: #272727;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    border-radius: 9999px;
+    transition: transform ease-in 300ms;
+}
+.btn3:hover {
+    transform: scale(1.2);
+    transition: transform ease-in 300ms;
+}
+.btn3:hover + .ball3 {
+    transform: translate(100px, -18px);
+    transition: transform ease-in 300ms;
+}
+.ball3 {
+    width: 100px;
+    height: 100px;
+    background: #7efb78;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    /* transform: scale(0.1); */
+    transition: transform ease-in 300ms;
+}

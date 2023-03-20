@@ -1,0 +1,46 @@
+/* CSS SQUARE ROTATE */
+.btn4 {
+    width: 20%;
+    background-color: #272727;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    border-radius: 9999px;
+    transition: transform ease-in 300ms;
+}
+.btn4:hover {
+    transform: scale(1.2);
+    transition: transform ease-in 300ms;
+}
+.btn4:hover + .boxes > .box__rotDeg {
+    /* animation en degré */
+    transform: rotate(180deg);
+    transition: transform ease-in 1000ms;
+}
+.btn4:hover + .boxes > .box__rotTurn {
+    /* animation en tours */
+    transform: rotate(-0.5turn);
+    transition: transform ease-in 1000ms;
+}
+.boxes {
+    display: flex;
+    flex-direction: row;
+}
+.box__base {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+    margin: 0 auto;
+    /* transform: scale(0.1); */
+    transition: transform ease-in 300ms;
+}
+.box__rotDeg {
+    background: #7efb78;
+}
+.box__rotTurn {
+    /* margin-top: 50px; */
+    background: #78c9fb;
+}

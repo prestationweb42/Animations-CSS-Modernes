@@ -1,0 +1,149 @@
+.container-loader h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: "lato";
+    margin: 100px auto 60px auto;
+}
+
+.load {
+    width: 30%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+.load__bar,
+.load__bar__4,
+.load__bar__5 {
+    background-color: #15dea5;
+    height: 100%;
+    width: 3vw;
+}
+
+.load__bar {
+    /* animation */
+    animation-name: bars;
+    animation-duration: 1s;
+    animation-delay: 200ms;
+    animation-fill-mode: backwards;
+    /* animation-iteration-count: 10; */
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+.load__bar__4 {
+    /* animation */
+    animation-name: bars;
+    animation-duration: 1s;
+    animation-delay: 400ms;
+    animation-fill-mode: backwards;
+    /* animation-iteration-count: 10; */
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+.load__bar__5 {
+    /* animation */
+    animation-name: bars;
+    animation-duration: 1s;
+    animation-delay: 600ms;
+    animation-fill-mode: backwards;
+    /* animation-iteration-count: 10; */
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+.load-reverse .load__bar {
+    /* animation */
+    animation-name: bars;
+    animation-duration: 1s;
+    animation-delay: 200ms;
+    animation-fill-mode: backwards;
+    /* animation-iteration-count: 10; */
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+}
+.load-reverse .load__bar__4 {
+    /* animation */
+    animation-name: bars;
+    animation-duration: 1s;
+    animation-delay: 400ms;
+    animation-fill-mode: backwards;
+    /* animation-iteration-count: 10; */
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+}
+.load-reverse .load__bar__5 {
+    /* animation */
+    animation-name: bars;
+    animation-duration: 1s;
+    animation-delay: 600ms;
+    animation-fill-mode: backwards;
+    /* animation-iteration-count: 10; */
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes bars {
+    0% {
+        transform: scaleY(0.5);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+@keyframes bars4 {
+    0% {
+        transform: scaleY(0.5);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+@keyframes bars5 {
+    0% {
+        transform: scaleY(0.5);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+/* spin */
+.container-spin {
+    width: 100%;
+    height: 100vh;
+}
+.spin {
+    background-color: #15dea5;
+    width: 30vh;
+    height: 30vh;
+    margin: 150px auto;
+    animation: spin 3s 9s linear alternate-reverse infinite;
+    /* animation-name: spin; */
+    /* animation-duration: 3s; */
+    /* animation-timing-function: linear; */
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: alternate-reverse; */
+    /* animation-play-state: paused; */
+    /* animation-delay: 600ms; */
+    /* animation-fill-mode: backwards; */
+    /* animation-iteration-count: 10; */
+}
+.spin:hover {
+    animation-play-state: running;
+}
+.spin p {
+    font-size: 30px;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,53 @@
+.container-form {
+    height: 30vh;
+    background-color: rgb(237, 246, 247);
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+.form__group label {
+    font-size: 1.5rem;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 20px;
+}
+.form__group input {
+    width: 50%;
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    border: 2px solid #fff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 100rem;
+    color: #6300a0;
+    outline: none;
+    transition: background-color 500ms;
+}
+.form__group input:focus {
+    border: 2px solid #6300a0;
+}
+.form__group input:not(:focus):invalid {
+    background-color: #b20a37;
+    border: 2px solid #b20a37;
+    color: white;
+    /* animation */
+    animation-name: headshake;
+    animation-duration: 500ms;
+    animation-delay: 100ms;
+    animation-timing-function: cubic-bezier(.4,.1,.6,.9);
+    animation-iteration-count: 2;
+}
+
+/* Keyframes */
+@keyframes headshake {
+    25% {
+        /* entièrement à droite */
+        transform: translateX(1%);
+    }
+    75% {
+        /* entièrement à gauche */
+        transform: translateX(-1%);
+    }
+}

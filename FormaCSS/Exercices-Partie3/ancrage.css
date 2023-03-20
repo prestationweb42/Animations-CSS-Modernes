@@ -1,0 +1,61 @@
+.boxes{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+}
+.boxes p {
+    font-size: 40px;
+    text-align: center;
+}
+.box-container{
+    display: flex;
+}
+.box-top-left,
+.box-top-right,
+.box-bottom-left,
+.box-bottom-right,
+.box-center {
+    width: 300px;
+    height: 300px;
+    background-color: antiquewhite;
+    margin: 0 auto;
+    transition: all ease-in-out 300ms;
+}
+.box-top-left{
+    background-color: rgb(210, 148, 68);
+}
+.box-bottom-left{
+    background-color: rgb(223, 208, 95);
+}
+.box-top-right{
+    background-color: rgb(82, 210, 68);
+}
+.box-bottom-right{
+    background-color: rgb(23, 138, 156);
+}
+.btn:active + .box-container > .box-center {
+    transform: scale(0.5);
+    transform-origin: center;
+    transition: all ease-in-out 300ms;
+}
+.btn:active + .box-container > .box-top-left {
+    transform: scale(0.5);
+    transform-origin: top left;
+    transition: all ease-in-out 300ms;
+}
+.btn:active + .box-container > .box-bottom-left {
+    transform: scale(0.5);
+    transform-origin: bottom left;
+    transition: all ease-in-out 300ms;
+}
+.btn:active + .box-container > .box-top-right {
+    transform: scale(0.5);
+    transform-origin: top right;
+    transition: all ease-in-out 300ms;
+}
+.btn:active + .box-container > .box-bottom-right {
+    transform: scale(0.5);
+    transform-origin: bottom right;
+    transition: all ease-in-out 300ms;
+}

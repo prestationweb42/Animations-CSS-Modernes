@@ -1,0 +1,66 @@
+.container {
+    background-color: rgb(237, 246, 247);
+    width: 100%;
+    height: 90vh;
+}
+
+.container p {
+    font-size: 30px;
+    text-align: center;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 100%;
+    margin: 0 auto 0 auto;
+}
+.form__group {
+    display: flex;
+    flex-direction: column;
+}
+.form__group label {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.form__group input {
+    border: 2px solid #fff;
+    border-radius: 100rem;
+    color: #6300a0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
+    outline: none;
+    padding: 0.5rem 1.5rem;
+    width: 100%;
+    transition: background-color 500ms;
+}
+.form__group input:focus {
+    border: 2px solid #6300a0;
+}
+.form__group input:not(:focus):invalid {
+    background-color: #b20a37;
+    border: 2px solid #b20a37;
+    color: white;
+}
+.btn {
+    width: 20%;
+    text-align: center;
+    font-size: 3rem;
+    color: #15dea5;
+    background-color: rgba(1, 28, 55, 0);
+    cursor: pointer;
+    margin: 2rem auto;
+    padding: 1.85rem 3rem;
+    border: 2px solid black;
+    border-radius: 9999px;
+    text-decoration: none;
+    transition: all ease-in 300ms;
+}
+.btn:hover {
+    transform: scale(1.15);
+    color: #15dea5;
+    background-color: rgba(1, 28, 55, 1);
+    /* transition-delay pour background-color */
+    transition: transform 450ms, background-color 300ms 150ms;
+}

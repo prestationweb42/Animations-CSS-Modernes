@@ -1,0 +1,66 @@
+.pseudo-element,
+.color {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+}
+.pseudo-element,
+.color p {
+    font-size: 40px;
+    text-align: center;
+}
+
+/* .btn-pseudo, */
+.btn-color {
+    width: 20%;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    border-radius: 9999px;
+    transition: all ease-in 200ms;
+    display: inline-block;
+    background-color: #15dea5;
+}
+
+.pseudo {
+    width: 20%;
+    text-align: center;
+    font-size: 2rem;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #000;
+    border-radius: 9999px;
+    /* background-color: #15dea5; */
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    position: relative;
+}
+.pseudo::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #154bde;
+    border-radius: 9999px;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 250ms;
+}
+
+.pseudo:hover {
+    color: #fff;
+    transition: all ease-in 300ms;
+}
+.pseudo:hover::after {
+    /* transform: scale(1.2); */
+    /* width: 100%; */
+    opacity: 1;
+    transition: all ease-in 300ms;
+}
